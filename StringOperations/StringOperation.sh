@@ -16,4 +16,14 @@ else
 	echo "$string_1 comes before $string_2"
 fi
 
+file_path="../perform.sh"
 
+#if [ -f ../perform.sh ] //also valid
+if [ -f "$file_path" ]
+then
+	echo "File exists"
+fi
+
+#Parts of string
+
+echo "First 3 characters of $string_1 : "${string_1:0:3}
