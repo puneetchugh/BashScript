@@ -25,5 +25,11 @@ then
 fi
 
 #Parts of string
-
 echo "First 3 characters of $string_1 : "${string_1:0:3}
+
+file_path=""
+#find out if string is empty
+if [ -z $file_path]
+then
+	echo "File path is empty"
+fi
